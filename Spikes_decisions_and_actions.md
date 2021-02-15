@@ -7,7 +7,7 @@
 ### Contents
 
 1. Introduction
-2. Fisrt order linear differential equations
+2. First order linear differential equations
 3. Two-dimensional systems and state space
 4. Higher dimensional linear systems
 5. Approximation and simulation
@@ -25,3 +25,10 @@
 
 
 ### Lecture Notes
+
+**2. First order linear differential equations**
+
+> dV/dt = -(1/tau){g_L(V-E_L) + g_e(V-E_e) + g_i(V-E_i)}
+
+- Shunting effect of GABAa synapses: they short circuit the depolarizing current produced by EPSPs.
+- Nonlinear interaction between EPSPs and IPSPs. Only when these synapses are far apart can make the effect subtractive.
