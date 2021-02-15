@@ -36,4 +36,10 @@
 **3. Two-dimensional systems and state space**
 
 - Two-component system
-- 
+- Solving linear second order differential equations `dX/dt = AX + B`
+  - find steady state Xeq : `AXeq + B = 0`
+  - obtain new equations `dX'/dt = AX'`
+  - find the characteristic equation `det|A-lambda*I| = 0`, solve for `lambda_1` and `lambda_2` (eigenvalues)
+  - solve eigenvectors `V_1 and V_2` by `A*V_1 = lambda_1*V_1` and `A*V_2 = lambda_2*V_2`
+  - solution has the form `X = X' + Xeq = a V_1 + b V_2 + Xeq`
+  - use initial conditions to solve `a` and `b`
