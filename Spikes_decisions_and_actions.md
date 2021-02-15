@@ -36,6 +36,7 @@
 **3. Two-dimensional systems and state space**
 
 - Two-component system
+
 - Solving linear second order differential equations `dX/dt = AX + B`
   - find steady state Xeq : `AXeq + B = 0`
   - obtain new equations `dX'/dt = AX'`
@@ -43,3 +44,12 @@
   - solve eigenvectors `V_1 and V_2` by `A*V_1 = lambda_1*V_1` and `A*V_2 = lambda_2*V_2`
   - solution has the form `X = X' + Xeq = a V_1 + b V_2 + Xeq`
   - use initial conditions to solve `a` and `b`
+  
+- Negative feedback in the retina
+  - cones stimulate horizontal cells
+  - horizontal cells inhibit cones
+  - experiments: stimulating cones by a step function of luminance -> overshoot -> slight undershoot -> equilibrium
+  - the model (C:cone, H:horizontal cell, L:light-induced stimulus, k:gain of the inhibitory feedback):
+      - dC/dt = {1/(tau_C)} * (- C - kH + L)
+      - dH/dt = {1/(tau_H)} * (- H + C)
+  
