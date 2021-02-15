@@ -32,3 +32,8 @@
 
 - Shunting effect of GABAa synapses: they short circuit the depolarizing current produced by EPSPs.
 - Nonlinear interaction between EPSPs and IPSPs. Only when these synapses are far apart can make the effect subtractive.
+
+**3. Two-dimensional systems and state space**
+
+- Two-component system
+- 
