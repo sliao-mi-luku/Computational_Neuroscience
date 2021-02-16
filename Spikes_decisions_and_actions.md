@@ -127,5 +127,20 @@
   - plotting isoclines reveals **multiple equilibria** where `dA/dt = dB/dt = 0`
   - *hysteresis*: present state not only depends on the present stimulus but also on the history of stimulation
   - short-term memory comes from the phenomenon that the system remains in a asymptotically stable equilibrium until the stimulus jumps and moves the system to another state 
-
+  - adaptation: introducing additional variables to account for an increase in the constant `sigma` in the Naka-Rushton function
+  
 - Mutual inhibition in neural decision making
+  - winner-take-all
+  - 2 asymptotically stable nodes separated by a unstable saddle point
+  - hystereis: once a neuron prevails, the other neuron needs much more stimulus to override the winner
+  
+**7. Computation by excitory and inhibitory networks**
+
+- Neural decision based on sensory evidence
+  - visual search experiment with 1 target (T) and N distractors (D)
+  - Naka-Rushton function for stimulus-response relation
+  - response = NakaRushton(stimulus) = max_response\*stimulus^2 / (sigma^2 + stimulus^2) if stimulus > 0 else 0
+  - `dT/dt = (1/tau) * (-T + NakaRushton(input_to_T - k*N*D)`
+  - `dD/dt = (1/tau) * (-D + NakaRushton(input_to_D - k*(N-1)*D - k*T)`
+
+****
