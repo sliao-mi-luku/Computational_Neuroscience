@@ -140,7 +140,9 @@
   - visual search experiment with 1 target (T) and N distractors (D)
   - Naka-Rushton function for stimulus-response relation
   - response = NakaRushton(stimulus) = max_response\*stimulus^2 / (sigma^2 + stimulus^2) if stimulus > 0 else 0
-  - `dT/dt = (1/tau) * (-T + NakaRushton(input_to_T - k*N*D)`
-  - `dD/dt = (1/tau) * (-D + NakaRushton(input_to_D - k*(N-1)*D - k*T)`
+  - `dT/dt = (1/tau) * (-T + NakaRushton(input_of_evidence_to_T - k*N*D)`
+  - `dD/dt = (1/tau) * (-D + NakaRushton(input_of_evidence_to_D - k*(N-1)*D - k*T)`
+  - exeperiments showed as the number of distractors (N) increases -> response time (latency) increase
+  - 
 
 ****
