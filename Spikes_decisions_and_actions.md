@@ -33,6 +33,12 @@
 - Shunting effect of GABAa synapses: they short circuit the depolarizing current produced by EPSPs.
 - Nonlinear interaction between EPSPs and IPSPs. Only when these synapses are far apart can make the effect subtractive.
 
+- Naka-Rushton function
+  - gives the **spike rate** (R) as a function of the **stimulus intensity** (S)
+  - if S <= 0: R(S) = 0
+  - if S > 0: R(S) = (M\*S^N) / (sigma^N + S^N)
+  - M: maximum spike rate, sigma: semisaturation constant 
+
 **3. Two-dimensional systems and state space**
 
 - Two-component system
@@ -83,5 +89,38 @@
 **5. Approximation and simulation**
 
 - Euler's method
+  - Taylor expansion keeping only the first order
   - `x(t+dt) ~ x(t) + dt*(dx/dt)`
+  - cons: always produces an unstable spiral solution around a steady state (center)
+  
 - Runge-Kutta
+  - higher order in Taylor expansion
+  - 4th order Runge-Kutta: `x(t+dt) ~ x(t) + (dt/6)*(K1 + 2*K_2 + 2*K_3 + K_4)`
+
+- Error ratios
+  - Euler's method: 1
+  - 2nd order Runge-Kutta: 1/3
+  - 4th order Runge-Kutta: 1/15
+  
+**6. Nonlinear neurodynamics and bifurcations**
+
+- Negative feedback in a divisive gain control
+  - B: bipolar cell, A: amacrine cell, L: light level
+  - `dB/dt = (1/tau_B)*{-B + L/(A+1)}`
+  - `dA/dt = (1/tau_A)*{-A + 2B}`
+
+- Stability of nonlinear system
+  - given `dX/dt = F(X)`
+  - find the equilibrium state `Xeq`
+  - calculate the **Jacobian matrix** of F **at Xeq**
+    - if all eigenvalues have negative real parts -> asymptotically stable
+    - if at least 1 eigenvalue has positive real part -> unstable
+    - if at least 1 eigenvalue is 0 -> Jacobian is not enough to say
+    - if any eigenvalue pair is pure imaginary -> Jacobian is not enough to say
+  - 
+- Mutual excitation in short-tem memory
+  - delayed response task
+  - prefrontal neurons
+  
+
+- Mutual inhibition in neural decision making
