@@ -67,4 +67,8 @@
   - **center**: eigencalues are pure imaginary.
   - **critical damping**: two eigenvalues are equal.
   
-- 
+- Critical damping and muscle contraction
+  - `x" + 2ax' + a^2(x-x0) = 0`
+  - `x(t) = A*exp(-at) + B*t*exp(-at) + x0`
+
+-
