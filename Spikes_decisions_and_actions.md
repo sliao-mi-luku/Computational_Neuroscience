@@ -121,6 +121,11 @@
 - Mutual excitation in short-tem memory
   - delayed response task
   - prefrontal neurons
-  
+  - Naka Rushton function: spike_rate = NakaRushton(stimulus)
+  - `dA/dt = (1/tau)*(-A + NakaRushton(3*B))`
+  - `dB/dt = (1/tau)*(-B + NakaRushton(3*A))`
+  - plotting isoclines reveals **multiple equilibria** where `dA/dt = dB/dt = 0`
+  - *hysteresis*: present state not only depends on the present stimulus but also on the history of stimulation
+  - short-term memory comes from the phenomenon that the system remains in a asymptotically stable equilibrium until the stimulus jumps and moves the system to another state 
 
 - Mutual inhibition in neural decision making
