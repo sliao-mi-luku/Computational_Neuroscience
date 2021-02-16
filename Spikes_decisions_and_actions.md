@@ -52,4 +52,19 @@
   - the model (C:cone, H:horizontal cell, L:light-induced stimulus, k:gain of the inhibitory feedback):
       - dC/dt = {1/(tau_C)} * (- C - kH + L)
       - dH/dt = {1/(tau_H)} * (- H + C)
+      
+- Stability
+  - asymptotically stable: all trajectories starting within a region containing the equilibrium point will decay to that point as time -> infinity
+  - unstable: at least 1 trajectory starting within a region containing the equilibrium will leave the region permanently
+  - stable/neutrally stable: nearby trajectories will remain nearby as time -> infinity, but will not approach asymptotically
   
+- Traejectories in the state space <-> solutions to the 2nd order differential equation
+  - **spiral point**: eigenvalues are complex conjugate pair. If real(eigenvalue) < 0 -> asymptotically sable
+  - **node**: eigenvalues are read and have the same sign.
+    - asymptotically stable node: both eigenvalues are negative
+    - unstable node: both eigenvalues are positive
+  - **saddle point**: eigenvalues are real but have opposite signs
+  - **center**: eigencalues are pure imaginary.
+  - **critical damping**: two eigenvalues are equal.
+  
+- 
