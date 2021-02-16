@@ -71,4 +71,17 @@
   - `x" + 2ax' + a^2(x-x0) = 0`
   - `x(t) = A*exp(-at) + B*t*exp(-at) + x0`
 
--
+**4. Higher dimensional systems**
+
+- Routh-Hurwitz criterion
+- Routh-Hurwitz criterion for oscillations
+- Respiration
+- Feedback with delays
+  - delay increases the dimensionality of a dynamical system
+  - increased time delays may cause dysfunctions (ex. sclerosis)
+  
+**5. Approximation and simulation**
+
+- Euler's method
+  - `x(t+dt) ~ x(t) + dt*(dx/dt)`
+- Runge-Kutta
