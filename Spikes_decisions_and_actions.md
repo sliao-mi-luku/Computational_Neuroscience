@@ -190,4 +190,16 @@
 - Delayed negative feedback
 - Competitive networks with adaptation
 
+**9. Action potentials and limit cycles**
 
+- Hodgkin-Huxley equations
+
+**10. Neural adaptation and bursting**
+
+**11. Neural chaos**
+
+**12. Synapse and synchrony**
+
+**13. Swimming and traveling waves**
+
+**14. **
