@@ -187,5 +187,7 @@
     - the system has an unstable limit cycle over a range b < a
     - near b = a, the oscillatio will be ~ w/2*pi
 
+- Delayed negative feedback
+- Competitive networks with adaptation
 
 
