@@ -143,6 +143,9 @@
   - `dT/dt = (1/tau) * (-T + NakaRushton(input_of_evidence_to_T - k*N*D)`
   - `dD/dt = (1/tau) * (-D + NakaRushton(input_of_evidence_to_D - k*(N-1)*D - k*T)`
   - exeperiments showed as the number of distractors (N) increases -> response time (latency) increase
+
+- Wilson-Cowan cortical dynamics
+  - all forms of interconnections: E->E, E->I, I->E, I->I
   - 
 
-****
+**8. **
