@@ -148,4 +148,44 @@
   - all forms of interconnections: E->E, E->I, I->E, I->I
   - 
 
-**8. **
+**8. Nonlinear oscillations**
+
+- Biological rhythms evolved to be inherently nonlinear so that the rhythm can be immune to the noise.
+
+- *limit cycles*
+  - definition: oscillatory trajectory is a limit cycle if all trajectories in a sufficiently small region enclosing that region are spirals
+  - a lmiit cycle is stable if neighboring trajectory spirals toward it as t -> inf
+  - a limit cycle is unstable if neighboring trajectory spirals away from it as t -> inf
+  - theorem (2-dimensional system)
+    - if a limit cycle exists in a autonomous (trajectory can't cross itself) system, it must surround at least 1 equilibrium point
+    - if it encloses only 1 equilibrea -> node, spiral point, or center. It can not be surrounding a saddle point
+    - if it encloses multiple equilibrea -> n(nodes) + n(spiral points) + n(centers) - n(saddle points) = 1
+  - Pointcare-Bendixon theorem (2-dimensional system)
+    - an annular region must contain at least 1 limit cycle if:
+    - (1) the annular region dosn't not contain equilibrium points, and
+    - (2) all trajectories crossing the boundary of the region enter it
+
+- Wilson-Cowan network oscillator
+  - cortex, where 25% are inbihitory GABA neurons and rest are excitatory glutamate neurons
+  - the model: 3 excitatory neurons and 1 inhibitory neuron with:
+    - excitatory neurons mutually excite each other
+    - all excitatory neurons project to the inhibitory neuron
+    - the inhibitory neurons projects to all 3 excitatory neurons
+    - all excitatory neurons receive external stimulation
+
+- FitzHugh-Naguma equations
+- 
+- Hopf bifurcation theorem (>=2 dimensional system)
+  - given the system `dX/dt = F(X, b)`, where `b` is a parameter
+  - given Xeq an equilibrium point
+  - if there exist `a` such that:
+    - (1) when b < a, Xeq is asymptotically stable
+    - (2) when b = a, the system has a pair of pure imaginary eigenvalues (+/-)iw, and all other eigenvalues have negative real parts
+    - (3) when b > a, Xeq is unstable
+  - then
+    - the system has an asymptotically stable limit cycle over a range b > a, or
+    - the system has an unstable limit cycle over a range b < a
+    - near b = a, the oscillatio will be ~ w/2*pi
+
+
+
