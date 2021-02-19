@@ -193,12 +193,69 @@
 **9. Action potentials and limit cycles**
 
 - Hodgkin-Huxley equations
+  - ion channel conductance depends on the membrane potential
+  - 
+- Two-dimensional Rinzel approximation
+
+- Noisy neurons
+  - noise can improve the performance of a nonlinear system
+  - noise added to the stimulus increases the probability of firing predominantly when the stimulus sinusoid is near its peak phase
+  - subthreshold noise can increase the sensitivity to prediodic sensory stimulation
+  - stochastic resonance
+  - the nature of the stimulus is encoded into the interspike intervals (Poisson process) in the response
+  - 
 
 **10. Neural adaptation and bursting**
 
+- Spike frequency adaptation
+  - RS (regular-spiking) neurons
+  - inclusion of an additional K+ current (I_AHP current), with a 20-times slower time constant than the recovery variable
+  - `dV/dt = -{Na+ term} - {Recovery term} - 13*H(V)*(V+0.95) + {I_input}`
+  - `dH/dt = (1/99) * {-H + 11*(V+0.754)*(V+0.69)}`
+
+- Neural bursting and hysteresis
+
+- Calcium currents and parabolic bursting
+  - incorporating a transient inward Ca2+ current (I_T) + hyperpolarizing Ca2+ current (I_AHP)
+  - `dV/dt = - {Na+ term} - {Recovery term} - 1.93X*(1-0.5C)*(V-1.4) - 3.25C*(V+0.95)`
+    - X: Ca2+ conductance (I_T term). Eeq = +140 mV. tau_X = 30 ms. dX/dt = (1/30)*(-X + function(V^2))
+    - C: Ca2+-modulated conductance of an additional K+ channel. Eeq = -95 mV. dC/dt = (1/100)*(-C + 3X) independent of V\
+    - No external input. Bursting is driven by the slow increasing I_T -> endogenous burster
+    - pacemaker
+  - parabolic bursting: spiking rate at the beginning/end of a burst is slower than during the middle of the burst
+
+- Neocortical bursting
+  - mouse somatosensory cortex
+  - "chattering cells" in cat visual cortex
+  - not endogeneous: need current injection
+  - spike height decreases after the first spike in a burst
+
 **11. Neural chaos**
 
+- chaos
+  - (1) trajectories are aperiodic and remain within a bounded volume, without approaching any steady state
+  - (2) sensitivity to initial conditions. arbitrary small change in the i.c. will lead to exponential uncertainty in the future
+  - (3) chaos cannot exist in a two-dimensional system
+
+- tests to differentiate limit cycles, quasiperiodicity, chaos, and noise
+  - Fourier power spectrum
+  - first return map
+  - Poincare section
+  - Lyapunov exponent
+
+- Neural chaos in motor control
+  - prey escaping
+  - creativity
+  - 
+
 **12. Synapse and synchrony**
+
+- Phase oscillator
+  - only the phase of each oscillator need to be considered when the coupling is weak
+  - the amplitude and the waveform of each limit cycle will be largely unaffected under weak coupling
+  - two coupled oscillators
+
+
 
 **13. Swimming and traveling waves**
 
