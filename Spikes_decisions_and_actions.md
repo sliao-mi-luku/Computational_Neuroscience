@@ -255,8 +255,16 @@
   - the amplitude and the waveform of each limit cycle will be largely unaffected under weak coupling
   - two coupled oscillators
 
-
+- Reciprocal inhibition
+  - Clione swimming
+  - anti-phase oscillation
+  - postinhibitory rebound
+    - after each neuron spike, an hyperpolarizing IPSP in the other cell results in postinhibitory rebound
+    - The other cell generates a spike
+    - IPSP must be brief (short) and strong
 
 **13. Swimming and traveling waves**
+
+
 
 **14. **
