@@ -294,4 +294,8 @@
     - 
   - the difference between b (left-right coupling stength) and c (diagonal coupling) will determine trotting or galloping, and which one is stable
 
+- Swimming of Tritonia
+  - the model
+    - DSI: dorsal swim interneuron, VSI: ventral swim interneurons, C2: 
+
 **14. **
