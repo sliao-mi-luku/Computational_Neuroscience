@@ -295,7 +295,30 @@
   - the difference between b (left-right coupling stength) and c (diagonal coupling) will determine trotting or galloping, and which one is stable
 
 - Swimming of Tritonia
+  - neuron types
+    - DSI: dorsal swim interneuron, excites motoneurons for dorsal flexion
+    - C2: C2 neuron
+    - VSI: ventral swim interneuron, excites motoneurons for ventral flexion
+  - the phenomemon
+    - each rhythmic activity consists of 4-7 cycles
+    - activation of DSI -> C2 -> VSI
   - the model
-    - DSI: dorsal swim interneuron, VSI: ventral swim interneurons, C2: 
+    - DSI (x3): recurrent excitatory, with I_AHP current, excite C2, inhibit VSIs
+    - C2 (x1): with I_AHP current, excites VSI
+    - VSI (x2): recurrent excitatory, with I_A current, inhibit DSIs, inhibit C2
+  - explanation
+    - DSI-DSI synaptic time constant is large (~320 ms)
+    - rhythmic activity ends after several cycles because of the slow increasing hyperpolarization by I_AHP (tau_AHP = 1250 ms)
 
-**14. **
+**14. Lyapunov functions and memory**
+
+- limitation of linearized stability analysis
+  - not work in the case where the eigenvalues are pure imaginary
+  - doesn't tell the range of initial conditions from which the trajectory will decay to the asymptotically steady state
+
+
+
+
+
+
+
