@@ -278,6 +278,20 @@
 
 **13. Swimming and traveling waves**
 
+- Swimming of lamprey
+  - Central pattern generator in each spinal cord segment
+  - Coupled phase oscillators
+  - The job of the brain:
+    - send a constant command to all segments
+    - send a slightly greater command to the first segment to swim forward,
+    - or send a slightly greater command to the last segment to swim backward
+  - side note:
+    - connection between non-adjacent segments help to produce traveling waves with a wavelength equal to the body length
 
+- Quadeuped locomotion
+  - the model
+    - we only need to write the equations of the left and right forelimbs, because hind leg is always out of phase of the ipsilateral fore leg
+    - 
+  - the difference between b (left-right coupling stength) and c (diagonal coupling) will determine trotting or galloping, and which one is stable
 
 **14. **
