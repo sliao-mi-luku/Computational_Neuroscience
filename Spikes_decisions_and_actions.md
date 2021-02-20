@@ -263,6 +263,16 @@
     - The other cell generates a spike
     - IPSP must be brief (short) and strong
 
+- Inhibitory synchrony
+  - synaptic conductance change persists over time
+  - postsynaptic effect `P(t) = (k/tau_syn^2)*t*exp(-t/tau_syn)`
+  - reciprocal inhibitory connection:
+    - short tau_syn -> antiphase
+    - long tau_syn -> synchrony
+  - reciprocal excitatory connection:
+    - short tau_syn -> synchrony
+    - long tau_syn -> antiphase
+
 **13. Swimming and traveling waves**
 
 
