@@ -273,6 +273,9 @@
     - short tau_syn -> synchrony
     - long tau_syn -> antiphase
 
+- Thalamic synchronization during deep sleep
+  - 
+
 **13. Swimming and traveling waves**
 
 
