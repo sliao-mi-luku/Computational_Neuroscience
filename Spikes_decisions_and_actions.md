@@ -316,6 +316,57 @@
   - not work in the case where the eigenvalues are pure imaginary
   - doesn't tell the range of initial conditions from which the trajectory will decay to the asymptotically steady state
 
+- state function
+  - scalar function (U) of variables that has continuous partial derivatives throughout the state space
+  - U is positive definite in a region R surrounding an internal singularity x0 if
+    - U(x0) = 0
+    - U(x) > 0 in R if x != x0
+    - mathematical valley around the signularity
+
+- **Lyapunov theorem**
+  - domain of attraction/domain of asymptotic stability
+  - Lyapunov functions are not unique for any particular dynamical system
+  - All asymptotically stable singular points have associated Lyapunov functions
+  - the existence of a Lyapunov function is both necessary and sufficient for asymptotic stability
+
+- construct a Lyapunov function
+  - given equation dx/dt = F(x, y), dy/dt = G(x, y)
+  - F(x, y) = 0, G(x, y) = 0 are the isoclines
+  - 
+
+- Constant of motion
+  - if `dx/dt = A(x)*B(y)`, `dy/dt = C(x)*D(y)`
+  - then U(x,y) = Integral_over_y[B(y)/D(y)] - Integral_over_x[C(x)/A(x)] (as long as the integral can be evaluated)
+  - the corresponding oscillation is called conservative oscillation
+  - any trajectory starting with (x0, y0) will evolve forever along the locus where U = U(x0, y0) = constant
+
+- Long-term memory
+  - hippocampus: stores and consolidates episodic memory -> transfer to higher cortical areas
+  - Hebb's learning rule
+    - weight of the synaptic connection `w = k*R_pre*R_post`
+    - event A: presynaptic neuron releases glutamate
+    - event B: postsynaptic neuron depolarizes dendrites to remove Mg2+ which are blocking the NMDA receptor
+    - NMDA receptor can only be activated if events A and B occur within 100-200 ms
+  - hippocampus CA3 model:
+    - a 16x16 grid pyramidal cells (256 in total), 1 inhibitory interneurons
+    - Ri: the firing rate of the i-th pyramidal cell (i = 1~256)
+    - M: the maximum firing rate of a pyramidal cell
+    - k: maximum synaptic strength achievable between a pair of pyramidal cells
+    - w_ij = synaptic strength onto neuron_j by neuron_i
+    - `w_ij = w_ji = k*H(Ri-0.5M)*H(Rj-0.5M)`
+    - each pyramidal cell projects to all other 255 pyramidal cells
+    - inhibitory neuron inhibits all 256 pyramidal cells
+
+
+
+
+
+
+
+
+
+
+
 
 
 
