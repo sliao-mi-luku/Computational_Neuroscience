@@ -362,7 +362,7 @@
     - associative network: stimulation by a portion of any previously learned pattern will cause the network to recall the entire pattern
 
 
-
+  - Dynamic temporal memories
 
 
 
