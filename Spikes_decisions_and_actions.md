@@ -364,8 +364,14 @@
 
   - Dynamic temporal memories
 
+**15. Diffusion and dendrites**
 
+- Cable equation
+  - D: length constant (proportional to sqrt(r), r = radius of the axon/dendrite)
 
+- Passive dendritic potentials
+  - mathematically we can treat the length of the dentrites to be infinity because it's >> D
+  - 
 
 
 
