@@ -356,7 +356,10 @@
     - `w_ij = w_ji = k*H(Ri-0.5M)*H(Rj-0.5M)`
     - each pyramidal cell projects to all other 255 pyramidal cells
     - inhibitory neuron inhibits all 256 pyramidal cells
-
+    - dynamical equations:
+      - `tau * dRi/dt = -Ri + NakaRushton(stimulus = sum(w_ij*Rj)-0.1*G, max_rate = 200, sigma = 10)`
+      - `tau * dG/dt = -G + g*sum(Ri)`
+    - associative network: stimulation by a portion of any previously learned pattern will cause the network to recall the entire pattern
 
 
 
